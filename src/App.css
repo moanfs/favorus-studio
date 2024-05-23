@@ -24,6 +24,7 @@ body{
 /* Navbar */
 .navbar{
     background-color: var(--color-primary);
+    box-shadow: 0 0 6px var(--color-text-gray-500);
 }
 
 .nav-link{
@@ -34,25 +35,25 @@ body{
 .nav-link:hover{
     color: var(--color-secondary);
     text-decoration: 2px underline;
-    /* background-color: var(--color-text-dark);
-    border-radius: 8px; */
 }
 
+.navbar-toggler {
+    color: transparent;
+    border: none;
+    outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 .navbar-brand{
     color: var(--color-text);
 }
 
 
-
-/* .navbar-toggler{
-    color: var(--color-text);
-    border:var(1px solid --color-text) ;
-} */
-
-/*
-Main content 
- */
+/* Main content */
 .main{
     margin: auto;
 }
@@ -62,26 +63,20 @@ Main content
 }
 
 .text-header span{
-    color: var(--color-primary);
+    color: var(--color-primary);   
+}
+
+.text-header span:hover{
     text-decoration: underline;
 }
 
 /* home */
 .home{
     background-color: var(--color-primary);
-    height: max-content;
+    height: 100vh;
 }
 
-.col.text-home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    height: 80vh;
-}
-
-.img-rocket{
+/* .img-rocket{
     width: 8rem;
     align-items: start;
     transform: rotate(20deg);
@@ -90,16 +85,13 @@ Main content
     left: 20%;
     transform: translate(-50%, -50%) rotate(20deg);
     z-index: 0;
-}
+} */
 
 .text-grow {
     color: var(--color-text);
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-    margin-bottom: -18px;
-    font-size: 2rem;
-    z-index: 1;
 }
 
 .text-business {
@@ -107,8 +99,6 @@ Main content
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-    font-size: 4rem;
-    z-index: 1;
 }
 
 .text-description {
@@ -117,39 +107,118 @@ Main content
     border-radius: 5px;
     font-style: italic;
     font-weight: bold;
-    font-size: 1.4rem;
     padding: 4px;
     display: inline;
 }
 
-.col.image img{
-    max-width: 40rem;
-}
-
 /* Service */
 .card-service{
-    background-color: var(--color-gray);
+    box-shadow: 0 2px 6px var(--color-text-gray-300);
     border: none;
+    padding: 5px 20px;
+}
+
+/* .card-service:hover{
+    transform: scale(1.2);
+    z-index: 2;
+} */
+
+.service-head{
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.service-head span{
+    color: var(--color-text-dark);
+}
+
+.service-content{
+    color: var(--color-text-gray-500);
+}
+
+/* client */
+.client{
+    background-color: var(--color-gray);
 }
 
 /* host talent */
 .card-talents{
-    border: none;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 1px var(--color-gray);
+    background-color: var(--color-gray);
+    border-radius: 10px;
     width: fit-content;
+    padding: 4px;
 }
+
+.card-talents:hover{
+    box-shadow: 0 0 6px 0 var(--color-text-gray-300);
+    transform: scale(1.1);
+    /* z-index: 1; */
+}
+
+/* .telent-name{
+    text-transform: capitalize;
+} */
 
 .talent-image{
     width: 14rem;
     height: 14rem;
+    border-radius: 8px 8px 0 0;
 }
 
-.telent-image:hover{
-    box-shadow: 0 24px 20px var(--color-text-dark);
+.carousel-control-outside {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px; /* Sesuaikan dengan kebutuhan Anda */
+    right: auto;
+    z-index: 1000; /* Pastikan navigasi luar di atas carousel */
 }
 
-/* 
-/End Main Content
-*/
+/* testimoni */
+/* .carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-text-dark);
+    color: var(--color-text-dark);
+    padding: 10px;
+    border-radius: 50%;
+} */
+
+/* .carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover { */
+    /* background-color: white; */
+    /* color: black; */
+/* } */
+
+
+
+/* footer */
+.footer{
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.social-icon i{
+    color: var(--color-text);
+}
+
+.moan{
+    text-decoration: none;
+}
+
+/* End Main Conten */
 
 /* whatsapp button */
 .whatsapp-container {
@@ -165,7 +234,7 @@ Main content
   .whatsapp-button {
     width: 60px;
     height: 60px;
-    background-color: var(--color-primary);
+    background-color: #2CB742;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -173,7 +242,8 @@ Main content
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     cursor: pointer;
-    border: 1px solid var(--color-text);
+    /* border: 1px solid var(--color-text); */
+    border: none;
     font-size: 24px;
     color: white;
   }
@@ -235,14 +305,22 @@ Main content
     margin-right: 10px;
   }
 
+  @media (max-width: 835px) {
+    .home-row{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+  }
 
   @media (max-width: 768px) {
-    /* main{
-        height: 100vh;
-    } */
-    .col.image img{
-        width: 22rem;
+    
+    .home-row{
+        flex-direction: column;
+        flex-direction: column-reverse;
     }
+    /* .col.image img{
+        width: 22rem;
+    } */
 
     /* .whatsapp-container{
     position: fixed;

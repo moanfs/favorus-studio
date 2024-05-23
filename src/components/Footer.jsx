@@ -17,7 +17,7 @@ export default function Footer(){
                 </div>
             </div>
             <hr className="mt-4"/>
-            <p className="text-center">Favorus Studio &copy; 2024. <span> Create by <a href="https://www.instagram.com/moan.fs/" target="_blank" className="text-white moan">@moanfs</a></span></p>
+            <p className="text-center">Favorus Studio &copy; 2024. <span> web create by <a href="https://www.instagram.com/moan.fs/" target="_blank" className="text-white moan">@moanfs</a></span></p>
            </div>
         </footer>
     )

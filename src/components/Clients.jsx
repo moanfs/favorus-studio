@@ -9,34 +9,32 @@ export default function Clinets(){
                     <h4 className="fw-bold">Our <span>Client</span></h4>
                     <p className="service-content">Berdiri sejak 2022, kami melayani dengan sepenuh hati 💖💖</p>
                 </div>
-                <div className="col-12 col-lg-6 row">
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                <div className="col-12 col-lg-6 row gap-4">
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
+                    <div className="col-2 ">
+                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="80px" />
                     </div>                    
-                    <div className="col-3 my-2">
-                        <img src="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png" alt="" width="100px" />
-                    </div>                    
+                                   
                 </div>
             </div>
         </div>

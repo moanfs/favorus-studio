@@ -1,35 +1,19 @@
-import About from './components/About'
-import Clinets from './components/Clients'
-import Contact from './components/Contact'
-import Content from './components/Content'
-import Feedback from './components/Feedback'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import Navbar from "./components/Navbar"
-import Service from './components/Service'
-import ServiceList from './components/Service-List'
-import HostLive from './components/host-live'
-import HostLiveTalent from './components/host-live-talent'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Nav from './components/navbar/Nav';
+import Contact from "./components/Contact"
 
 function App() {
   return (
-    <>
-      <Navbar/>
+    <Router>
+      <Nav/>
       <Contact/>
-      <Content>
-        <Home/>
-        <Service>
-          <ServiceList/>
-        </Service>
-        <About/>
-        <Clinets/>
-        <HostLive>
-          <HostLiveTalent/>
-        </HostLive>
-        <Feedback/>
-      </Content>
-      <Footer/>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </Router>
   )
 }
 

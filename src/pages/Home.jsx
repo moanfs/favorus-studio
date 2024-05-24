@@ -15,7 +15,7 @@ const Home = () => {
                 <div className="text-home col-12 col-lg-6 align-content-center text-center order-lg-1 order-2">
                     <h2 className="display-5 text-grow mb-0 fst-italic">Grow Your </h2>
                     <h1 className="display-2 text-business mt-0 fst-italic">Business!</h1>
-                    <p className="lead text-description fst-italic">Need Host Live for your business</p>
+                    <p className="lead text-description fst-italic">Need Host Live for your business?</p>
                 </div>
                 <div className="image col-12 col-lg-6 align-content-center align-content-lg-center order-lg-2 order-1">
                     <img src={HomeImage} alt="" className="img-fluid" />
@@ -30,7 +30,6 @@ const Home = () => {
                 number="01" 
                 title="Digital Marketing" 
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque soluta excepturi laboriosam molestiae iure deleniti dicta voluptates consequuntur veniam."
-                
                 />
                 <CardService 
                 number="02" 

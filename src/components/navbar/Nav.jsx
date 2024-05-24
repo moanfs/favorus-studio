@@ -9,9 +9,10 @@ const Nav = () =>{
                 <NavLogo/>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 text-center mb-lg-0">
-                        <NavLink text="Service" url="#service"/>
-                        <NavLink text="Host Live" url="#host-live"/>
-                        <NavLink text="About Us" url="#about"/>
+                        <NavLink text="Home" url="/"/>
+                        <NavLink text="Service" url="/service"/>
+                        <NavLink text="Our Work" url="/our-work"/>
+                        <NavLink text="About Us" url="/about"/>
                         <NavLink text="Blog" url="/blog"/>
                     </ul>
                 </div>

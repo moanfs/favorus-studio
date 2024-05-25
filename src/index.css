@@ -14,7 +14,6 @@
 
 ::-webkit-scrollbar {
     width: 5px;
-    /* height: 100vh; */
   }
   
 ::-webkit-scrollbar-track {
@@ -31,6 +30,10 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary); 
+}
+
+body{
+    font-family: 'Montserrat', 'Poppins' ,sans-serif;
 }
 
 .btn-custom.primary .right{
@@ -61,16 +64,10 @@
     justify-content: flex-start;
 }
 
-body{
-    font-family: 'Montserrat', 'Poppins' ,sans-serif;
-}
-
 /* Navbar */
 .navbar{
     background-color: var(--color-primary);
     box-shadow: 0 0 0px 0 var(--color-text-dark);
-    /* position: sticky;
-    top: 0; */
 }
 
 .nav-link{
@@ -78,8 +75,7 @@ body{
     font-weight: bold;
 }
 
-
-.acitve, .nav-link:hover{
+.nav-link:hover{
     color: var(--color-secondary);
     text-decoration: 2px underline;
 }
@@ -100,10 +96,6 @@ body{
 }
 
 /* home content */
-.main{
-    margin: auto;
-}
-
 .text-header{
     color: var(--color-text-dark);
 }
@@ -336,9 +328,3 @@ body{
     height: 30px;
     margin-right: 10px;
   }
-
-
-  
-  
-  
-

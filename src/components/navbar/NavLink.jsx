@@ -5,5 +5,4 @@ const NavLink = ({text, url}) =>{
       </li>
     )
 }
-
 export default NavLink

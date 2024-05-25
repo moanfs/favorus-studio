@@ -1,5 +1,5 @@
+import Main from "../layout/Main";
 import HomeImage from "../assets/img/gambar.png"
-import Footer from "../components/Footer";
 import HostLiveTalent from "../components/HostLiveTalent";
 import Title from "../components/Title";
 import CardService from "../components/cards/CardService";
@@ -9,11 +9,11 @@ import ImgCarousel from "../components/carousels/ImgCarousel";
 
 const Home = () => {
     return(
-    <div className="">
+    <Main>
         <div className="home d-flex justify-content-center">
-            <div className="row col-12 col-lg-10 align-content-center  align-content-lg-stretch ">
+            <div className="row col-12 col-lg-10 align-content-center align-content-lg-stretch ">
                 <div className="text-home col-12 col-lg-6 align-content-center text-center order-lg-1 order-2">
-                    <h2 className="display-5 text-grow mb-0 fst-italic">Grow Your </h2>
+                    <h2 className="display-5 text-grow mb-0 fst-italic ">Grow Your </h2>
                     <h1 className="display-2 text-business mt-0 fst-italic">Business!</h1>
                     <p className="lead text-description fst-italic">Need Host Live for your business?</p>
                 </div>
@@ -114,10 +114,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
-        <Footer/>
-    </div>
+    </Main>
     )
-}
-
+};
 export default Home;

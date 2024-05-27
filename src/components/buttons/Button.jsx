@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ color, position, children, onClick }) => {
   const colorClass = `btn-${color}`;
-  const positionClass = position === 'center' ? 'd-block mx-auto' : `float-${position}`;
+  const positionClass = position === 'center' ? ' d-block mx-auto ' : `float-${position}`;
 
   return (
     <button className={`btn ${colorClass} ${positionClass}`} onClick={onClick}>

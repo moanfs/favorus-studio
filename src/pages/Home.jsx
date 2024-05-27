@@ -6,18 +6,19 @@ import CardService from "../components/cards/CardService";
 import AboutImg from "../assets/img/about.jpg"
 import ImagesClient from "../components/cards/ImagesClient";
 import ImgCarousel from "../components/carousels/ImgCarousel";
+import Carousel from "../components/carousels/Carousel";
 
 const Home = () => {
     return(
     <Main>
         <div className="home d-flex justify-content-center">
-            <div className="row col-12 col-lg-10 align-content-center align-content-lg-stretch ">
-                <div className="text-home col-12 col-lg-6 align-content-center text-center order-lg-1 order-2">
+            <div className="row col-12 col-lg-10 align-content-start gap-2 mt-5 mt-lg-0 gap-lg-0 align-content-lg-stretch">
+                <div className="text-home col-12 col-lg-6 align-content-center  text-center order-lg-1 order-2 py-5">
                     <h2 className="display-5 text-grow mb-0 fst-italic ">Grow Your </h2>
                     <h1 className="display-2 text-business mt-0 fst-italic">Business!</h1>
-                    <p className="lead text-description fst-italic">Need Host Live for your business?</p>
+                    <p className="fs-6 col text-description fst-italic">Need Host Live for your business?</p>
                 </div>
-                <div className="image col-12 col-lg-6 align-content-center align-content-lg-center order-lg-2 order-1">
+                <div className="image col-12 col-lg-6 align-content-lg-center order-lg-2 order-1">
                     <img src={HomeImage} alt="" className="img-fluid" />
                 </div>
             </div>
@@ -27,16 +28,22 @@ const Home = () => {
             <Title titleLeft="Our " titleColor="Service" subTitle="Layanan yang kami berikan"/>
             <div className="row gap-3 justify-content-center">
                 <CardService 
+                aos="fade-up-right"
+                placement="center-bottom"
                 number="01" 
                 title="Digital Marketing" 
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque soluta excepturi laboriosam molestiae iure deleniti dicta voluptates consequuntur veniam."
                 />
-                <CardService 
+                <CardService
+                aos="fade-up"
+                placement="center-bottom" 
                 number="02" 
                 title="Host Live" 
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque soluta excepturi laboriosam molestiae iure deleniti dicta voluptates consequuntur veniam."
                 />
                 <CardService 
+                aos="fade-up-left"
+                placement="center-bottom"
                 number="03" 
                 title="Branding Design" 
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque soluta excepturi laboriosam molestiae iure deleniti dicta voluptates consequuntur veniam."
@@ -71,8 +78,7 @@ const Home = () => {
                         <p className="service-content">Berdiri sejak 2022, kami melayani dengan sepenuh hati 💖💖</p>
                     </div>
                     <div className="col-12 col-lg-7 row gap-4 align-items-center">
-                        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-                            <div className="carousel-inner d-flex justify-content-center">
+                        <Carousel>
                             <ImgCarousel active="active">
                                 <ImagesClient image="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png"/>               
                             </ImgCarousel>
@@ -82,8 +88,7 @@ const Home = () => {
                             <ImgCarousel>
                                 <ImagesClient image="https://www.vhv.rs/dpng/d/494-4944646_logo-unilever-png-hd-transparent-png.png"/>               
                             </ImgCarousel>
-                            </div>
-                        </div>                  
+                        </Carousel>                 
                     </div>
                 </div>
             </div>
@@ -91,7 +96,7 @@ const Home = () => {
 
         <div className="host-live-talent mx-auto mt-5 col-12 col-lg-9" id="host-live">
             <Title titleLeft="Our " titleColor="Host Live" subTitle="Host yang siap membantu live anda"/>
-            <div className="row gap-2 justify-content-center my-4">
+            <div className="row gap-2 justify-content-lg-between justify-content-center my-4 mx-lg-5">
                <HostLiveTalent/>
             </div>
         </div>

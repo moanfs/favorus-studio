@@ -5,7 +5,7 @@ import ButtonCustom from './buttons/ButtonCustom';
 
 const HostLiveTalent = () => {
     const [data, setData] = useState([]);
-    const [visibleCount, setVisibleCount] = useState(5);
+    const [visibleCount, setVisibleCount] = useState(4);
     const [error, setError] = useState(null);
 
     useEffect(()=>{
@@ -20,11 +20,11 @@ const HostLiveTalent = () => {
         fetchData();
     }, []);
     const handleShowMore = () => {
-        setVisibleCount(prevCount => prevCount + 5);
+        setVisibleCount(prevCount => prevCount + 4);
       };
     
     const handleShowLess = () => {
-        setVisibleCount(prevCount => (prevCount - 5 >= 5 ? prevCount - 5 : 5));
+        setVisibleCount(prevCount => (prevCount - 4 >= 4 ? prevCount - 4 : 4));
     };
 
     return(
@@ -37,7 +37,7 @@ const HostLiveTalent = () => {
         <>
           {data.slice(0, visibleCount).map((row, index) => (
             <div key={index} className="col-10 col-lg-4 card-talents">
-              <CardHostLive data={row} />
+              <CardHostLive data={row}/>
             </div>
           ))}
           <div className="gap-2 col-8 col-lg-12 d-flex justify-content-center">

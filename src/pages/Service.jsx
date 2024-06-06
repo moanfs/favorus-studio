@@ -1,83 +1,50 @@
-import Button from "../components/buttons/Button"
 import Main from "../layout/Main"
-import logos from "../assets/img/logos.svg"
-import Accordion from "../components/accordion/Accordion"
-import AccordionItem from "../components/accordion/AccordionItem"
-import AccordionContent from "../components/accordion/AccordionContent"
-import AccordionButton from "../components/accordion/AccordionButton"
-import Title from "../components/title/Title"
-import Card from "../components/cards/Card"
-import CardNoBorderD3 from "../components/cards/CardNoBorderD3"
+import Section from "../components/section";
 
 const Service = () =>{
     return(
     <Main>
-        <div className="service-page">
-            <div className="text-center ">
-                <h1 className="text-capitalize">Layanan yang kami berikan</h1>
-                <p className="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla pariatur quae officiis optio dolorum totam.</p>
-                <Button color="warning text-white fw-semibold">Konsultasi Gratis</Button>
+        <div className="h-fit pt-20 animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 bg-fixed">
+        <Section sectionClassName="text-center  py-20">
+            <h1 className="text-3xl leading-[52px] font-semibold md:text-4xl lg:text-5xl text-white ">Discover the power of 
+            <span className="bg-purple-600 text-[#fff] p-0.5 rounded-lg ms-2">creative inspiration</span> online<br />
+            <div className="sm:mt-2">
+                <span className="underline decoration-purple-600 underline-offset-4">
+                    Explore a world of design
+                    possibilities
+                </span>
             </div>
-            <div className="col-12 col-lg-8 d-flex mx-auto row mt-5">
-                <CardNoBorderD3>
-                        <h5 ><i className="bi bi-laptop"></i> Digital Marketing</h5>
-                        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </CardNoBorderD3>
-                <CardNoBorderD3 cardClass="border-start border-end">
-                    <h5 ><i className="bi bi-tiktok"></i> Host Live</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, molestias!</p>  
-                </CardNoBorderD3>
-                <CardNoBorderD3>
-                    <h5><i className="bi bi-window-dock"></i> Branding Design</h5>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, molestias!</p>
-                </CardNoBorderD3>
-            </div>
-        </div>
-        <div className="service-why">
-            <div className="container col-12 col-lg-8 mx-auto row py-4 row d-flex align-items-center">
-                <div className="col-12 col-lg-6">
-                    <h5 className="fw-semibold" >Mengapa Membutuhkan Kami?</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facere eius voluptatum ab sint quod itaque odio sapiente sequi expedita.</p>
-                </div>
-                <div className="col-12 col-lg-6 d-flex justify-content-center ">
-                    <img src={logos} alt="" className=" img-fluid" width="300px"/>
-                </div>
-            </div>
+            </h1>
+            <p className="mt-4 text-lg font-medium leading-2 text-gray-600 md:text-xl">Unleash your creativity with access
+            to a
+            vast collection of website screenshots, code snippets, and more at UI Shots.</p>
+        </Section>
         </div>
 
-        <div className="container mt-5">
-            <Title titleColor="Goals"  subTitle="Goals yang kami miliki"/>
-            <div className="service-goals col-12 col-lg-8 mx-auto d-flex row gap-lg-5 gap-3 justify-content-center">
-                <Card cardClass="col-12 col-lg-5 ">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos magni provident, odit laudantium deleniti aspernatur quisquam reprehenderit dignissimos quidem. Optio non impedit voluptate repellat voluptatum et doloremque distinctio fuga consequuntur!
-                </Card>
-                <Card cardClass="col-12 col-lg-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos magni provident, odit laudantium deleniti aspernatur quisquam reprehenderit dignissimos quidem. Optio non impedit voluptate repellat voluptatum et doloremque distinctio fuga consequuntur!
-                </Card>
+        <Section sectionClassName="mx-auto py-16">
+            <div className="mx-auto flex md:flex-row xs:flex-col lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-4">
+                <div className="lg:w-[50%] xs:w-full">
+                    <img className="lg:rounded-t-lg sm:rounded-sm xs:rounded-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxob21lfGVufDB8MHx8fDE3MTA0OTAwNjl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
+                </div>
+                <div className="lg:w-[50%] sm:w-full xs:w-full bg-gray-100  md:p-4 xs:p-0 rounded-md">
+                    <h2 className="text-3xl font-semibold">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligend sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuganobis tempora possimus ullam!</p>
+                </div>
             </div>
-        </div>
-
-        <div className="service-fag container col-12 col-lg-8 mx-auto my-5">
-            <Title titleRight="FAQ"  subTitle="Hal yang sering ditanya"/>
-            <Accordion accoType="accordionFlushExample" accorId="accordionFlushExample">
-                <AccordionItem targetId="satu">
-                    <AccordionButton  buttonText="Berapa biaya untuk live tiktok?"/>
-                    <AccordionContent>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos cupiditate nemo!</AccordionContent>
-                </AccordionItem>
-                <AccordionItem targetId="dua">
-                    <AccordionButton buttonText="Social Media Menagement?"/>
-                    <AccordionContent>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos cupiditate nemo!</AccordionContent>
-                </AccordionItem>
-                <AccordionItem targetId="tiga">
-                    <AccordionButton buttonText="Social Media Menagement?"/>
-                    <AccordionContent>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos cupiditate nemo!</AccordionContent>
-                </AccordionItem>
-                <AccordionItem targetId="empat">
-                    <AccordionButton buttonText="Social Media Menagement?"/>
-                    <AccordionContent>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos cupiditate nemo!</AccordionContent>
-                </AccordionItem>
-            </Accordion>
-        </div>
+    
+            <div className="mx-auto flex md:flex-row xs:flex-col lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-6">
+                <div className="md:hidden sm:block xs:block xs:w-full">
+                    <img className="lg:rounded-t-lg sm:rounded-sm xs:rounded-sm" src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8aG9tZXxlbnwwfDB8fHwxNzEwNDkwMDcwfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
+                </div>
+                <div className="lg:w-[50%] xs:w-full bg-gray-100  md:p-4 xs:p-0 rounded-md">
+                    <h2 className="text-3xl font-semibold ">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p className="text-md mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat assumenda nam veritatis, magni doloremque pariatur quos fugit ipsa id voluptatibus deleniti officiis cum ratione eligendi sed necessitatibus aliquam error laborum delectus quaerat. Delectus hic error eligendi sed repellat natus fuganobis tempora possimus ullam!</p>
+                </div>
+                <div className="md:block sm:hidden xs:hidden lg:w-[50%] xs:w-full">
+                    <img className="lg:rounded-t-lg xs:rounded-sm" src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8aG9tZXxlbnwwfDB8fHwxNzEwNDkwMDcwfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
+                </div>
+            </div>
+        </Section>
     </Main>
     )
 }

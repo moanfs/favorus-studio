@@ -1,9 +1,9 @@
 import axios from 'axios';
+const BASE_URL = import.meta.env.VITE_REST_API;
+
 export const fetchDataHostFromSpreadsheet  = async () => {
       try {
-        const response = await axios.get(
-            'https://sheets.googleapis.com/v4/spreadsheets/1_y3jvecuBTGsIfvQP5g1OIUZ8OJjqAUFExN5VGUGMWA/values/Sheet1?key=AIzaSyDalBzbOFFOl6ZElLBcfXMJJB0fg4ML0cM' 
-        );
+        const response = await axios.get(`${BASE_URL}`);
         const rows = response.data.values;
         const headers = rows[0];
         const dataRows = rows.slice(1).map(row => {

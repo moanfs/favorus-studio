@@ -1,24 +1,40 @@
+import Section from "./section";
+import { FaWhatsapp } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
+import { TbBrandGoogleMaps } from "react-icons/tb";
+import { FaTiktok } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaFacebookF } from "react-icons/fa6";
+
 export default function Footer(){
     return(
-        <footer className="footer ">
-            <div className="row col-12 col-lg-8 mx-auto pt-5 ">
-                <div className="col-12 col-lg-8">
-                    <h4 className="text-decoration-underline ">Favorus Studio</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores quo ipsum molestiae libero, officia mollitia perferendis veritatis magni aliquam possimus sint repellat enim, esse nisi facilis voluptas repellendus! Nulla?</p>
-                </div>
-                <div className="col-12 col-lg-4">
-                    <h5><i className="bi bi-whatsapp"></i> 0821321323123</h5>
-                    <p><i className="bi bi-envelope"></i> favorus.studio@gmail.com</p>
-                    <p><i className="bi bi-geo-alt"></i> Kota Bengkulu, Bengkulu</p>
-                    <div className="fs-5 social-icon ">
-                        <a  href="" target="_blank"><i className="bi bi-tiktok"></i></a>
-                        <a  href="https://www.instagram.com/favorus.studios/" target="_blank"><i className="bi bi-instagram"></i></a>
-                        <a  href="" target="_blank"><i className="bi bi-facebook"></i></a>
+        <footer className="bg-[#191919]">
+            <Section sectionClassName="text-white ">
+                <div className="lg:grid lg:grid-cols-2 sm:flex sm:flex-row gap-4 py-10 opacity-85">
+                    <div className="">
+                        <h4 className="font-semibold text-2xl">Favorus Studio</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores quo ipsum molestiae libero, officia mollitia perferendis veritatis magni aliquam possimus sint repellat enim, esse nisi facilis voluptas repellendus! Nulla?</p>
+                    </div>
+                    <div className="flex flex-col sm:items-start lg:items-end xs:mt-10 lg:mt-0">
+                        <div className="space-y-2">
+                            <h5 className="flex items-center"><FaWhatsapp size={24} className="mr-4"/> 0821321323123</h5>
+                            <p className="flex items-center"><MdOutlineEmail size={24} className="mr-4"/> favorus.studio@gmail.com</p>
+                            <p className="flex items-center"><TbBrandGoogleMaps size={24} className="mr-4"/>Kota Bengkulu, Bengkulu</p>
+                            <p>Follow On:</p>
+                            <div className="flex gap-4">
+                                <a  href="" target="_blank"><FaTiktok size={24}/></a>
+                                <a  href="https://www.instagram.com/favorus.studios/" target="_blank"><IoLogoInstagram size={24}/></a>
+                                <a  href="" target="_blank"><FaFacebookF size={24}/></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <hr className="mt-4"/>
-                <p className="text-center">Favorus Studio &copy; 2024 &#9900; Web Build by <a href="https://www.instagram.com/moan.fs/" target="_blank" className="text-white moan">@moanfs</a></p>
-           </div>
+                <hr className="opacity-50"/>
+                <div className="flex xs:flex-col sm:flex-row justify-between py-4 text-xs ">
+                    <p className="text-center">&copy; 2024 Favorus Studio. All rights reserved.</p>
+                    <a href="https://halomoan-xi.vercel.app/" target="_blank" className="text-white text-center">website build by @moanfs</a>
+                </div>
+            </Section>
         </footer>
     )
 }

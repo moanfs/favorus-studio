@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchDataHostFromSpreadsheet } from '../services/DataHostLive';
 import CardHostLive from './cards/CardHostLive';
-import ButtonCustom from './buttons/ButtonCustom';
 
 const HostLiveTalent = () => {
     const [data, setData] = useState([]);
@@ -35,17 +34,19 @@ const HostLiveTalent = () => {
         </div>
       ) : (
         <>
+          <div className='grid lg:grid-cols-4 xs:grid-cols-1 md:grid-cols-2 gap-5'>
           {data.slice(0, visibleCount).map((row, index) => (
-            <div key={index} className="col-10 col-lg-4 card-talents">
+          <div key={index} className="">
               <CardHostLive data={row}/>
-            </div>
+          </div>
           ))}
-          <div className="gap-2 col-8 col-lg-12 d-flex justify-content-center">
+          </div>
+          <div className="flex justify-end gap-5">
             {visibleCount > 5 && (
-              <ButtonCustom color="primary" position="center" onClick={handleShowLess}>Show Less</ButtonCustom>
+              <button onClick={handleShowLess}>Show Less</button>
             )}
             {visibleCount < data.length && (
-              <ButtonCustom color="primary" position="center" onClick={handleShowMore}>Show More</ButtonCustom>
+               <button onClick={handleShowMore}>Show Less</button>
             )}
           </div>
         </>

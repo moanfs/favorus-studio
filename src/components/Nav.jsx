@@ -47,7 +47,7 @@ const Nav = () =>{
     </div> */}
     <nav className={classNames(scrollPosition > 50 ? "animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 shadow" : "bg-transparent", " transition duration-500 ease-in-out w-full  py-4 z-50  fixed top-0")}>
         <Section sectionClassName="flex items-center justify-between ">
-            <NavLink to="/" className="font-bold text-3xl text-[#fff]">Favorus</NavLink>
+            <NavLink to="/" className="font-bold text-3xl text-[#fff]">Digital</NavLink>
             <div className="xs:hidden sm:hidden lg:block space-x-8 text-[#fff] text-base">
                 <NavLink to="/" className={(({isActive}) => isActive ? "font-bold opacity-100 border-b-2 px-2 rounded-b-md" : " opacity-80")} >Home</NavLink>
                 <NavLink to="/service" className={(({isActive}) => isActive ? "font-bold opacity-100 border-b-2 px-2 rounded-b-md" : " opacity-80")}>Service</NavLink>
